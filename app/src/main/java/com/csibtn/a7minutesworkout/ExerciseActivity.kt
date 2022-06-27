@@ -7,7 +7,7 @@ import android.os.Bundle
 import android.os.CountDownTimer
 import android.speech.tts.TextToSpeech
 import android.view.View
-import android.widget.Toast
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.csibtn.a7minutesworkout.databinding.ActivityExerciseBinding
 import java.lang.Exception
 import java.util.*
@@ -28,6 +28,7 @@ class ExerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
     lateinit var tts : TextToSpeech
     lateinit var player : MediaPlayer
+    lateinit var exerciseAdapter : ExerciseStatusAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -43,7 +44,14 @@ class ExerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         player = MediaPlayer()
 
         setupRestView()
+        adapterSetUp()
         tts = TextToSpeech(this,this,"")
+    }
+
+    private fun adapterSetUp(){
+        exerciseBinder.rvExerciseStatus.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+        exerciseAdapter = ExerciseStatusAdapter(exerciseList)
+        exerciseBinder.rvExerciseStatus.adapter = exerciseAdapter
     }
 
     private fun setProgressBar() {
