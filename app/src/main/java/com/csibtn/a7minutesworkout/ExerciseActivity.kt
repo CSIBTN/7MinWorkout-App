@@ -1,5 +1,6 @@
 package com.csibtn.a7minutesworkout
 
+import android.content.Intent
 import android.media.MediaPlayer
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
@@ -100,12 +101,19 @@ class ExerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
             }
 
             override fun onFinish() {
-                exerciseList[currentExercisePosition].setIsSelected(false)
-                exerciseList[currentExercisePosition].setIsCompleted(true)
-                exerciseAdapter.notifyDataSetChanged()
-                if(currentExercisePosition < exerciseList.size - 1){
+                if (currentExercisePosition > exerciseList.lastIndex) {
+                    exerciseList[currentExercisePosition].setIsSelected(false)
+                    exerciseList[currentExercisePosition].setIsCompleted(true)
+                    exerciseAdapter.notifyDataSetChanged()
                     setupRestView()
                 }
+                else{
+                    Intent(applicationContext,FinishActivity::class.java).also{
+                        startActivity(it)
+                        finish()
+                    }
+                }
+
             }
         }.start()
     }

@@ -6,12 +6,14 @@
         <entry key="..\:/Users/ichig/7MinutesWorkout/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1955" />
         <entry key="..\:/Users/ichig/7MinutesWorkout/app/src/main/res/drawable/circular_progress__grey_bar.xml" value="0.161" />
         <entry key="..\:/Users/ichig/7MinutesWorkout/app/src/main/res/drawable/circular_progress_bar.xml" value="0.161" />
+        <entry key="..\:/Users/ichig/7MinutesWorkout/app/src/main/res/drawable/finish_circle.xml" value="0.2235" />
         <entry key="..\:/Users/ichig/7MinutesWorkout/app/src/main/res/drawable/item_circular_border.xml" value="0.1015" />
         <entry key="..\:/Users/ichig/7MinutesWorkout/app/src/main/res/drawable/item_circular_color_background.xml" value="0.161" />
         <entry key="..\:/Users/ichig/7MinutesWorkout/app/src/main/res/drawable/item_circular_color_gray_background.xml" value="0.2235" />
         <entry key="..\:/Users/ichig/7MinutesWorkout/app/src/main/res/drawable/item_circular_eclipse_background.xml" value="0.122" />
         <entry key="..\:/Users/ichig/7MinutesWorkout/app/src/main/res/drawable/item_color_border_ripple.xml" value="0.1015" />
         <entry key="..\:/Users/ichig/7MinutesWorkout/app/src/main/res/layout/activity_exercise.xml" value="0.33" />
+        <entry key="..\:/Users/ichig/7MinutesWorkout/app/src/main/res/layout/activity_finish.xml" value="0.33" />
         <entry key="..\:/Users/ichig/7MinutesWorkout/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/ichig/7MinutesWorkout/app/src/main/res/layout/item_exercise_status.xml" value="0.2515625" />
       </map>

@@ -5,4 +5,7 @@
     <string name="get_ready">Get Ready!</string>
     <string name="exercisename">ExerciseName</string>
     <string name="next_exercise">Next Exercise :</string>
+    <string name="end">END</string>
+    <string name="finish_announcement">Congratulations! You\'ve finished!</string>
+    <string name="finish">FINISH</string>
 </resources>
